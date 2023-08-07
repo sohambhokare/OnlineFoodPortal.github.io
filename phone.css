@@ -1,0 +1,82 @@
+body{
+
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+#navbar img{
+    margin: 3px 7px;
+    height: 12vh;
+    width: 26vw;
+}
+ul li a{
+    padding:1px 8px; 
+    padding-bottom: 8px;   
+}
+#home{
+    height: 190px;
+}
+
+#home::before{
+    height: 400px;
+    width: 100%;
+}
+#home p{
+    font-size: 0.9em;
+}
+.btn{
+    margin: 9px;
+}
+
+.primary-heading{
+    font-size: 1.2em;
+}
+.services{
+    margin-top: 94px;
+}
+.box1{
+    width: 83vw;
+    height: 63vh;
+}
+#img1,#img2,#img3{
+    height: 12.2vh;
+    width: 22.2vw;
+}
+
+.box1,.box2,.box3 p{
+    /* box-sizing: border-box; */
+    margin: 9px;
+    margin-bottom: 49px;
+}
+.Secondary-heading {
+    font-size: 1rem;
+    margin: 5px;
+}
+.logos{
+    padding: 0px;
+    flex-wrap: wrap;    
+}
+
+#clients::before{
+    height:780px;
+}
+.client{
+    padding-top: 4px;
+}
+.logo1, .logo2, .logo3, .logo4 {
+    height: auto;
+    padding: 16px;
+    width: 130px;
+
+}
+.maincon{
+    overflow: hidden;
+}
