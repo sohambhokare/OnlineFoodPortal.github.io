@@ -1,0 +1,251 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    font-family: 'Pangolin', cursive;
+    text-shadow: 4px 4px 3px black;
+    color: rgb(248, 248, 244);
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+#logo{
+    margin: 2px 9px;
+    /* border: 2px solid white; */
+    /* border-radius: 50px; */
+}
+#navbar img{
+    margin: 4px 7px;
+    height: 12vh;
+    width: 12vw;
+}
+#navbar ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 1px 17px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lilita One', cursive;
+    font-family: 'Rowdies', cursive;
+    text-shadow: 7px 7px 3px black;
+}
+ul li a:hover {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 8px;
+    text-shadow: none;
+    box-shadow:7px 7px 3px black; ;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 33px 180px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Pangolin', cursive;
+    height: 532px;
+    padding: 30px;
+}
+#home::before{
+    content: "";
+    background: url("../img/bg.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+.primary-heading{
+    font-size: 1.88rem;
+}
+.btn{
+    margin: 33px;
+    padding: 2px 9.5px;
+    height: 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 7px;
+    background-color: rgb(202, 191, 191);
+    box-shadow: 4px 4px 5px black;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(141, 135, 135);
+    border: 7px solid rgb(63, 62, 62);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 43vh;
+    width: 36vw;
+    margin: 23px;
+    padding: 10px;
+    border-radius: 23px;
+    position: relative;
+}
+#img1,#img2,#img3{
+    display: block;
+    height: 17.2vh;
+    width:10.2vw;
+    box-shadow: 7px 7px 6px black;
+}
+
+.Secondary-heading{
+    font-size: 1.1rem;
+    margin: 13px;
+}
+.box1,.box2,.box3 p{
+    font-size: 0.9rem;
+    margin: 39px;
+    font-weight: bold;
+    box-shadow:9px 9px 8px black; ;
+}
+#container{
+    display: flex;
+    /* position: relative; */
+    flex-direction: column;
+}
+.container1{
+    display: flex;
+    position: relative;
+    /* flex-direction: column; */
+}
+.services{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem ;
+    color: grey;
+    /* margin: 290px; */
+}
+.container::before{
+    content: "";
+    background-color: rgb(165, 34, 34);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;   
+}
+.Clients{
+    display: flex;    
+}
+
+.client{
+    display: flex;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.logos{
+    padding-top: 50px;
+    display: flex;
+    /* padding-left: 130px; */
+    margin-left: 13vw;
+}
+.logo1,.logo2,.logo3,.logo4{
+    /* height: 3vh; */
+    width: 14vw;
+    /* position: relative; */
+    height: 22vh;
+    padding: 0px 42px;
+    width: 13vw;
+    /* justify-content: space-between; */
+    position: relative;
+}
+
+#clients::before{
+    content: "";
+    background: url("../img/clientbg.jpeg") no-repeat center center/cover;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.55;
+}
+#contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 125px;
+    /* justify-content: center ;     */
+    /* position: relative; */
+}
+#contacts h4{
+    font-size: 2.5rem;
+    color: rgb(155, 151, 151);
+    font-weight: bolder;
+    text-align: center;
+    /* font-family: 'Pangolin', cursive; */
+    /* color: whitesmoke; */
+}
+.Contactus{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    justify-content: center;
+    width: 355px;
+    color: rgb(15, 105, 146);
+    font-weight: bolder;
+    font-size: 1.7rem ;
+    text-shadow: 5px 4px 9px rgb(128, 154, 226);
+    
+}
+
+.Contactus input, textarea{
+    box-shadow: 7px 6px 8px black;
+    padding: 7px 32px;
+    margin-top: 7px;
+}
+
+#contacts::before{
+    content: "";
+    background: url("../img/contact-us.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;    
+}
+
+
+
